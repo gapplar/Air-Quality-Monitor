@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+#container {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px; /* Max height for desktop view */
+    margin: 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.good {
+    background-color: #4CAF50;
+}
+
+.moderate {
+    background-color: #FF9800;
+}
+
+.unhealthy {
+    background-color: #F44336;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 10px; /* Allowing a bit of padding on mobile */
+    }
+}
